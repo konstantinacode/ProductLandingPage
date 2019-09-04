@@ -1,0 +1,287 @@
+.empty {
+  margin-top: 10%;
+}
+
+#header {
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 90%;
+      grid-template-columns: 10% 90%;
+  background-color: black;
+  z-index: 1;
+}
+
+#header #header-img {
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+
+#header #nav-bar {
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  text-align: right;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#header .container {
+  list-style-type: none;
+  margin: 0%;
+  padding: 0%;
+}
+
+#header .container .navLink {
+  text-align: center;
+  display: inline;
+}
+
+#header .container .navLink a {
+  text-decoration: none;
+  padding: 1%;
+  color: white;
+}
+
+#header .container .navLink a:hover {
+  background-color: #333333;
+}
+
+footer {
+  text-align: center;
+  padding: 1%;
+  border-top: 1px solid #666666;
+  position: absolute;
+  width: 100%;
+}
+
+footer a {
+  color: white;
+}
+
+@media screen and (max-width: 950px) {
+  body main {
+    width: 100%;
+  }
+  body main #video {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body main section #about {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    width: 100%;
+  }
+  body main section #about article p,
+  body main section #about article #pTitle {
+    all: unset;
+    text-align: justify;
+    display: block;
+    margin-left: auto;
+    color: #9ca0a9;
+    padding: 2%;
+  }
+  body main section #about #about-img {
+    display: none;
+  }
+  body main section #about article #pTitle {
+    font-size: 2em;
+    color: black;
+    text-align: center;
+  }
+  main section #about-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: block;
+    text-align: center;
+    background-color: #99471a;
+    margin-left: auto;
+    padding: 1% 0;
+  }
+  main section #about-info .info {
+    width: 80%;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+body {
+  background-color: black;
+  margin: 0%;
+  padding: 0%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  margin: 10% auto 0% auto;
+  text-align: center;
+  width: 80%;
+}
+
+h2 {
+  color: #666666;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+p {
+  color: #9ca0a9;
+}
+
+#about {
+  background-color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
+  width: 100%;
+  margin: 2% 0%;
+}
+
+#about article {
+  text-align: left;
+  width: 100%;
+  display: inline-block;
+  font-size: 1.5em;
+}
+
+#about article #pTitle {
+  font-size: 2em;
+  color: black;
+}
+
+#about article p {
+  padding: 1%;
+}
+
+#about #about-img {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  display: inline-block;
+}
+
+#about-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+  background-color: #99471a;
+}
+
+#about-info h5 {
+  color: black;
+}
+
+#about-info .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  margin: 2%;
+  padding: 2%;
+}
+
+#about-info .info img {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+#plan .container {
+  width: 100%;
+  background-color: white;
+  color: black;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  -ms-grid-rows: (auto)[16];
+      grid-template-rows: repeat(16, auto);
+  justify-items: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  padding: 2%;
+  border-bottom: 1px solid #9ca0a9;
+}
+
+#plan .container .number {
+  font-size: 3em;
+  color: #9ca0a9;
+  padding: 2%;
+  margin: 1%;
+}
+
+#plan .container .title {
+  font-size: 2em;
+}
+
+#plan .container .description {
+  color: #9ca0a9;
+}
+
+#plan .container .container2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  padding: 2%;
+  margin: 1%;
+}
+
+main #form #email {
+  padding: 0.75%;
+  margin: 2%;
+  width: 40%;
+  height: 2vh;
+  text-align: center;
+}
+
+main #form #submit {
+  margin: 2%;
+  padding: 0.75%;
+  width: 30%;
+  height: 10vh;
+  position: relative;
+  font-size: 1.2em;
+  background-color: #a71b1e;
+  opacity: 0.75;
+  color: white;
+  border: none;
+}
+
+main #form #submit:hover {
+  opacity: 1;
+}
+/*# sourceMappingURL=styles.css.map */
