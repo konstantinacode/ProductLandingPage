@@ -1,0 +1,50 @@
+@media screen and (max-width: 950px) {
+  body main {
+    width: 100%;
+    #video {
+      display: block;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    section {
+      #about {
+        grid-template-columns: 100%;
+        width: 100%;
+      }
+      #about article p,
+      #about article #pTitle {
+        all: unset;
+        text-align: justify;
+        display: block;
+        margin-left: auto;
+        color: rgb(156, 160, 169);
+        padding: 2%;
+      }
+      #about #about-img {
+        display: none;
+      }
+      #about article #pTitle {
+        font-size: 2em;
+        color: black;
+        text-align: center;
+      }
+    }
+  }
+  main section #about-info {
+    flex-direction: column;
+    display: block;
+    text-align: center;
+    background-color: rgb(153, 71, 26);
+    margin-left: auto;
+    padding: 1% 0;
+
+    .info {
+      width: 80%;
+      display: block;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
